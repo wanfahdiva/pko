@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+RewriteRule ^halaman_login$ index.php
+RewriteRule ^halaman_guru$ indexguru.php
+RewriteRule ^halaman_pilih$ pilih.php
+RewriteRule ^selesai_memilih$ selesai_pilih.php
+RewriteRule ^page/beda_hari$ teubisa/beda_hari.php
+RewriteRule ^page/belum_waktu$ teubisa/belum.php
+RewriteRule ^page/telat$ teubisa/telat.php
+RewriteRule ^page/sudah_memilih$ teubisa/sudah_pilih.php
+RewriteRule ^ifsu/(.*) page-admin/$1

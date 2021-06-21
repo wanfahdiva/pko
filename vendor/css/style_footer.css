@@ -1,0 +1,108 @@
+html, body {
+  font-family: 'Inconsolata', monospace !important;
+}
+/*Footer*/
+.foot{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #3b5998;
+  height: auto;
+  width: 100%;
+
+
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kontak{
+  padding: 5px;
+}
+.kontak h4{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.kontak p{
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+.footer a{
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  position: relative;
+  margin: 40px 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer a:hover{
+  color: aliceblue;
+  opacity: 0.8;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.gf{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.gf img{
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+}
+.cp{
+  background-color: #3b5998;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cp p{
+  color: white;
+  font-size: 16px;
+  display: flex;
+  margin: 20px;
+  justify-content: flex-start;
+}
+@media(max-width: 991px){
+  .footer{
+    background-color: #45C58D;
+    height: 200px;
+    width: 100%;
+  }
+
+  .footer a{
+    margin: 50px;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .kontak h4{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+  .kontak p{
+    font-size: 10px;
+    text-align: center;
+    color: white;
+  }
+  .gf img{
+    width: 100%;
+    max-width: 30px;
+    height: auto;
+  }
+  .cp p{
+    font-size: 8px;
+  }
+}

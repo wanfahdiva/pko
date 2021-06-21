@@ -1,0 +1,116 @@
+html, body {
+  height: 100%;
+  font-family: 'Inconsolata', monospace !important;
+}
+.page-wrap {
+  min-height: 100%; 
+	margin-bottom: 80px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+	height: 80px; 
+}
+.site-footer {
+  background: #3b5998;
+}
+.img1{
+  width: 50px;
+}
+.img2{
+  width: 46px;
+}
+.text-justy{
+  text-align: left !important;
+  font-size: 15px !important;
+}
+.modal-content .card-body h5{
+  font-weight: bold;
+  display: inline;
+  border-bottom: 2px solid #333;
+}
+.testing{
+  text-shadow: 3px 2px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 544px) {  
+  .page-wrap {
+    margin-bottom: -45px; 
+  }
+  .testing{
+      font-size: 1.2rem !important;
+      font-weight: bold;
+  }
+  .img1{
+    width: 40px;
+  }
+  .img2{
+    width: 36px;
+  }
+  .tbtn{
+    font-size: 14px !important;
+  }
+  .modal-body {
+    padding: 0.5rem 1rem !important;
+}
+  .modal-title{
+    font-size: 19px !important;
+    text-shadow: 3px 2px rgba(0, 0, 0, 0.2) !important;
+  }
+  .modal-content .card-body h5{
+    font-size: 17px !important;
+    font-weight: bold;
+    display: inline;
+    border-bottom: 2px solid #333;
+    text-shadow: 3px 2px rgba(0, 0, 0, 0.2) !important;
+}
+  .modal-content .card-body h5 .lead{
+    font-size: 14px !important;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {  
+  .card-body .lead{
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .img1{
+    width: 30px;
+  }
+  .img2{
+    width: 30px;
+  }
+}
+@media only screen and (max-width: 344px) {
+  .img1{
+    width: 25px;
+  }
+  .img2{
+    width: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) {  
+  .testing{
+      font-size: 1.5rem !important;
+      font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 992px) { 
+  .tbtn{
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {  
+    
+}
+
+@media only screen and (min-width: 950px) { 
+.page-wrap{
+  height: 100vh;
+}
+}
