@@ -23,7 +23,7 @@ if (isset($_GET['pesan'])) {
     <link rel="shortcut icon" href="../vendor/images/ifsu.png" />
 </head>
 
-<body onload="init()">
+<body>
     <div class="wrapper">
         <div class="container">
             <h1 class="textz">Selamat Datang</h1>

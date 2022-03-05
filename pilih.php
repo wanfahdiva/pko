@@ -24,11 +24,7 @@ $sesi = mysqli_real_escape_string($conn, $assosiasi['sesi']);
 $pilihan = mysqli_real_escape_string($conn, intval($assosiasi['pilihan']));
 
 //ngacek geus milih atawa acan
-if ($pilihan == 1) {
-  header("location:page/sudah_memilih");
-} elseif ($pilihan == 2) {
-  header("location:page/sudah_memilih");
-} elseif ($pilihan == 3) {
+if ($pilihan > 0 ) {
   header("location:page/sudah_memilih");
 }
 
