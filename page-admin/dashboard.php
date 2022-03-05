@@ -20,7 +20,6 @@ if (isset($_POST['simpan'])) {
   }
 }
 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,6 +44,7 @@ if (isset($_POST['simpan'])) {
 
   <!-- Custom styles for this template-->
   <link href="vendor/css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="vendor/css/datepicker.css" rel="stylesheet">
   <!-- Custom styles for this page -->
   <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
@@ -173,32 +173,25 @@ if (isset($_POST['simpan'])) {
             </h5>
           </div>
 
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-left justify-content-left mb-4">
-            <h4 class="m-0 font-weight-bold text-primary">Tanggal Mulai</h4>
-          </div>
-
           <!-- DataTales Date -->
           <div class="row">
-            <div class="col-6">
+            <div class="col-12">
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-gray">-Format penulisan:"<b class="text-info"> tanggal:bulan:tahun </b>"</h6>
-                  <p class="m-0 font-weight-bold text-gray">-Contoh:"<b class="text-info"> 10:12:2020 </b>"</p>
+                  <h6 class="m-0 font-weight-bold text-gray">Tanggal Mulai</h6>
                 </div>
                 <div class="card-body">
                   <form action="" method="post">
                     <div class="form-group row">
                       <label for="awal" class="col-sm-2 col-form-label">awal</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" required id="awal" placeholder="awal" name="awal" autocomplete="off" value="<?php echo mysqli_real_escape_string($conn, $assosiasi['mulai']); ?>">
+                        <input type="text" class="form-control datepicker" id="awal" required id="awal" placeholder="awal" name="awal" autocomplete="off" value="<?php echo mysqli_real_escape_string($conn, $assosiasi['mulai']); ?>">
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="akhir" class="col-sm-2 col-form-label">akhir</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" required id="akhir" placeholder="akhir" name="akhir" autocomplete="off" value="<?php echo mysqli_real_escape_string($conn, $assosiasi['selesai']); ?>">
+                        <input type="text" class="form-control datepicker" id="akhir" required id="akhir" placeholder="akhir" name="akhir" autocomplete="off" value="<?php echo mysqli_real_escape_string($conn, $assosiasi['selesai']); ?>">
                       </div>
                     </div>
                     <div class="form-group row float-right">
@@ -288,10 +281,18 @@ if (isset($_POST['simpan'])) {
         easing: "easeOutExpo",
         delay: 2000
       });
+      $(function(){
+            $(".datepicker").datepicker({
+                format: 'dd:mm:yyyy',
+                autoclose: true,
+                todayHighlight: true,
+            });
+        });
   </script>
 
   <!-- Custom scripts for all pages-->
   <script src="vendor/js/sb-admin-2.min.js"></script>
+  <script src="vendor/js/bootstrap-datepicker.js"></script>
 
   <!-- Page level plugins -->
   <script src="vendor/js/Chart.bundle.js"></script>
